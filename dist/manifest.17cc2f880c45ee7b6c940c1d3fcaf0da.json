@@ -1,0 +1,17 @@
+{
+  "icons": [
+    {
+      "src": "icon_144x144.6a788b2da517da5f3abb0d5b9a7746c2.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "name": "Applica Dev",
+  "short_name": "ApplicaDev",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Simple PWA",
+  "background_color": "#2c2c2c",
+  "theme_color": "#2c2c2c"
+}

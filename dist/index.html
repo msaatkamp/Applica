@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="./manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="../node_modules/nes.css/css/nes.min.css" rel="stylesheet" />
+    <link href="./assets/css/app.css" rel="stylesheet" />
+    <title>AAAAAAAAAAAA CARALHO!</title>
+<meta name="theme-color" content="#2c2c2c" /><link rel="manifest" href="manifest.17cc2f880c45ee7b6c940c1d3fcaf0da.json" /><link rel="shortcut icon" href="favicon.ico"></head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('worker.js').then(function (registration) {
+                    console.log('Worker registration successful', registration.scope);
+                }, function (err) {
+                    console.log('Worker registration failed', err);
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            });
+        } else {
+            console.log('Service Worker is not supported by browser.');
+        }
+        alert('Dist: ' + __dir)
+    </script>
+<script type="text/javascript" src="bundle.js" defer></script></body>
+
+</html>
